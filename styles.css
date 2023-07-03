@@ -1,0 +1,183 @@
+.navbar {
+    background-color: #252525;
+    padding: 10px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+  }
+  
+  .toggle-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-right: 15px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo img {
+      height: 25px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .navbar-item {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-item:last-child {
+      margin-bottom: 0;
+    }
+  
+    .navbar-toggle.active + .navbar-menu {
+      display: flex;
+    }
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .flight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .flight-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flight-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .flight-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .flight-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .flight-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .flight-card p {
+    margin: 5px 0;
+  }
+  
+  
+  .footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #007bff;
+  }
+  
